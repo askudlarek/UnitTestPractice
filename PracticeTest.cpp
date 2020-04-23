@@ -71,7 +71,7 @@ TEST(PracticeTest, decending_random_order)
     int c = 3;
     Practice obj;
     obj.sortDescending(a, b, c);
-    ASSERT_TRUE(a == 5, b == 3, c == 1);
+    ASSERT_TRUE(a == 5 && b == 3 && c == 1);
 }
 
 TEST(PracticeTest, decending_opposite_order)
@@ -82,7 +82,7 @@ TEST(PracticeTest, decending_opposite_order)
     int c = 332;
     Practice obj;
     obj.sortDescending(a, b, c);
-    ASSERT_TRUE(a == 332, b == 321, c == 141);
+    ASSERT_TRUE(a == 332 && b == 321 && c == 141);
 }
 
 TEST(PracticeTest, decending_in_order)
@@ -93,7 +93,7 @@ TEST(PracticeTest, decending_in_order)
     int c = 2;
     Practice obj;
     obj.sortDescending(a, b, c);
-    ASSERT_TRUE(a == 12, b == 6, c == 2);
+    ASSERT_TRUE(a == 12 && b == 6 && c == 2);
 }
 
 TEST(PracticeTest, decending_negative_numbers)
@@ -104,7 +104,7 @@ TEST(PracticeTest, decending_negative_numbers)
     int c = -2;
     Practice obj;
     obj.sortDescending(a, b, c);
-    ASSERT_TRUE(a == -2, b == -23, c == -42);
+    ASSERT_TRUE(a == -2 && b == -23 && c == -42);
 }
 
 TEST(PracticeTest, decending_negative_and_nonnegative)
@@ -115,7 +115,7 @@ TEST(PracticeTest, decending_negative_and_nonnegative)
     int c = -42;
     Practice obj;
     obj.sortDescending(a, b, c);
-    ASSERT_TRUE(a == 23, b == -23, c == -42);
+    ASSERT_TRUE(a == 23 && b == -23 && c == -42);
 }
 
 TEST(PracticeTest, decending_numbers_with_tie)
@@ -126,7 +126,7 @@ TEST(PracticeTest, decending_numbers_with_tie)
     int c = 5;
     Practice obj;
     obj.sortDescending(a, b, c);
-    ASSERT_TRUE(a == 5, b == 5, c == 2);
+    ASSERT_TRUE(a == 5 && b == 5 && c == 2);
 }
 
 TEST(PracticeTest, decending_numbers_all_tied)
@@ -137,5 +137,5 @@ TEST(PracticeTest, decending_numbers_all_tied)
     int c = 34;
     Practice obj;
     obj.sortDescending(a, b, c);
-    ASSERT_TRUE(a == 34, b == 34, c == 34);
+    ASSERT_TRUE(a == 34 && b == 34 && c == 34);
 }
